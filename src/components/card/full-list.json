@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_card_full_lists",
+  "info": {
+    "displayName": "FullCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Label": {
+      "type": "string"
+    },
+    "SecondaryImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Subtitle": {
+      "type": "string"
+    }
+  }
+}
