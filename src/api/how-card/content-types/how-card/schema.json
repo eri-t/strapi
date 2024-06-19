@@ -7,7 +7,13 @@
     "displayName": "HowCard"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "publishedAt",
+      "locale"
+    ]
   },
   "pluginOptions": {
     "i18n": {

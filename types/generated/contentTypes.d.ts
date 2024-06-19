@@ -798,6 +798,7 @@ export interface ApiHomeHome extends Schema.SingleType {
   };
   options: {
     draftAndPublish: true;
+    privateAttributes: ['createdAt', 'updatedAt', 'publishedAt', 'locale'];
   };
   pluginOptions: {
     i18n: {
@@ -841,6 +842,7 @@ export interface ApiHomeHowSectionHomeHowSection extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: true;
+    privateAttributes: ['createdAt', 'updatedAt', 'publishedAt', 'locale'];
   };
   pluginOptions: {
     i18n: {
@@ -866,6 +868,13 @@ export interface ApiHomeHowSectionHomeHowSection extends Schema.CollectionType {
       'oneToMany',
       'api::how-card.how-card'
     >;
+    sectionId: Attribute.UID &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -901,6 +910,7 @@ export interface ApiHomeTechSectionHomeTechSection
   };
   options: {
     draftAndPublish: true;
+    privateAttributes: ['createdAt', 'updatedAt', 'publishedAt', 'locale'];
   };
   pluginOptions: {
     i18n: {
@@ -926,6 +936,13 @@ export interface ApiHomeTechSectionHomeTechSection
       'oneToMany',
       'api::technology.technology'
     >;
+    sectionId: Attribute.UID &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -959,6 +976,7 @@ export interface ApiHowCardHowCard extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: true;
+    privateAttributes: ['createdAt', 'updatedAt', 'publishedAt', 'locale'];
   };
   pluginOptions: {
     i18n: {
@@ -1007,6 +1025,7 @@ export interface ApiSuccessStoriesSectionSuccessStoriesSection
   };
   options: {
     draftAndPublish: true;
+    privateAttributes: ['createdAt', 'updatedAt', 'publishedAt', 'locale'];
   };
   pluginOptions: {
     i18n: {
@@ -1066,6 +1085,7 @@ export interface ApiSuccessStorySuccessStory extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: true;
+    privateAttributes: ['createdAt', 'updatedAt', 'publishedAt', 'locale'];
   };
   pluginOptions: {
     i18n: {
@@ -1126,6 +1146,7 @@ export interface ApiTechnologyTechnology extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: true;
+    privateAttributes: ['createdAt', 'updatedAt', 'publishedAt', 'locale'];
   };
   pluginOptions: {
     i18n: {

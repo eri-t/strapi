@@ -1,4 +1,5 @@
 module.exports = [
+  'global::flatten-response',
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
